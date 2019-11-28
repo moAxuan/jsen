@@ -1,0 +1,433 @@
+
+body {
+	overflow-x:hidden;
+}
+/* logo整体下移 */
+@keyframes logo1 {
+	from{top:   -80px;}
+	to{top: : 80px;}
+}
+/* logo太极效果 */
+/* logo左边从下到上-鼠标进入 */
+@keyframes tucheng1 {
+	from{ top:-55px; }
+	to{top: 55px;}
+}
+/* logo右边从上到下-鼠标进入 */
+@keyframes tucheng3 {
+	from{ top:55px; }
+	to{top: -55px;}
+}
+/* logo左边从上到下-鼠标移出 */
+@keyframes tucheng2 {
+	from{ top:55px; }
+	to{top: -55px;}
+}
+/* logo右边从下到上-鼠标移出 */
+@keyframes tucheng4 {
+	from{ top:-55px; }
+	to{top: 55px;}
+}
+/* Step 向上移 */
+@keyframes step {
+	from{
+		margin-top: 300px;
+		opacity: 0;
+	}
+	to{
+		margin-top: 200px;
+		opacity: 1;
+	}
+}
+/* form向左移 */
+@keyframes form {
+	from{right:-300px;}
+	to{right: 0px;}
+}
+
+/* icon图标翻转 */
+@keyframes flipping {
+	from{transform:rotateY(0deg);}
+	to {transform:rotateY(360deg);}
+}
+
+/* hr的长度 */
+@keyframes len{
+	from{width: 0px;}
+	to{width: 90%;}
+}
+
+/* 左右交叉进场 */
+
+@keyframes left1 {
+	from{
+		position: absolute;
+		left: 0px;
+		opacity: 0;
+	}
+	to{
+		position: absolute;
+		left: 75px;
+		opacity: 1;
+	}
+}
+@keyframes left2{
+	from{
+		position: absolute;
+		left: 566px;
+		opacity: 0;
+	}
+	to{
+		position: absolute;
+		left: 659px;
+		opacity: 1;
+	}
+}
+@keyframes left3 {
+	from{
+		position: absolute;
+		left: -100px;
+		opacity: 0;
+	}
+	to{
+		position: absolute;
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+
+@keyframes right1 {
+	from{
+		position: absolute;
+		right: 0px;
+		opacity: 0;
+	}
+	to{
+		position: absolute;
+		right: 180px;
+		opacity: 1;
+	}
+}
+@keyframes right2 {
+	from{
+		position: absolute;
+		right: 650px;
+		opacity: 0;
+	}
+	to{
+		position: absolute;
+		right: 764px;
+		opacity: 1;
+	}
+}
+@keyframes right3 {
+	from{
+		right:-200px;
+		opacity: 0;
+	}
+	to {
+		right: 200px;
+		opacity: 1;
+	}
+}
+
+/* 掉下+抖动 */
+@keyframes down1 {
+	from{position: absolute;opacity: 0;top: -100px;left:22%;}
+	to{position: absolute;opacity: 1;top: 199px;left:22%;}
+}
+@keyframes down3 {
+	from{position: absolute;opacity: 0;top: -100px;left:27%;}
+	to{position: absolute;opacity: 1;top: 147px;left:27%;}
+}
+@keyframes down2 {
+	0% {position: absolute;top: -45px; opacity: 0;}
+	30% {position: absolute;top: -45px; opacity: 0;}
+	50%{position: absolute;top: 10px;opacity: 1;}
+	70% {position: absolute;top: -10px;}
+	80%{position: absolute;top: 10px;}
+	100% {position: absolute;top: 0px;}
+}
+@keyframes up1 {
+	from{position: absolute;opacity: 1;top: 199px;left:22%;}
+	to{position: absolute;opacity: 0;top: -100px;left:22%;}
+}
+@keyframes up3 {
+	from{position: absolute;opacity: 1;top: 147px;left:27%;}
+	to{position: absolute;opacity: 0;top: -100px;left:27%;}
+}
+@keyframes up2 {
+	from {position: absolute;opacity: 1;top: 0px;}
+	to {position: absolute;opacity: 1;top: -45px;opacity: 0}
+}
+
+/* 三角形梯形矩形 */
+@keyframes len1 {
+	from {
+		width: 30px;
+	}
+	to {
+		width: 640px;
+	}
+}
+@keyframes len2 {
+	from {
+		width: 640px;
+	}
+	to {
+		width: 0px;
+	}
+}
+/* 框框 */
+@keyframes kuang{
+	from {
+		width: 150px;
+		height: 50px;
+		border:none;
+	}
+	to {
+		width: 155px;
+		height: 55px;
+		border:3px solid #FF7900;
+		opacity: 1;
+	}
+}
+
+/* 出现与消失 */
+@keyframes dis {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes diss{
+	to{opacity: 0;}
+}
+
+/* 字体颜色 */
+@keyframes color {
+	from {
+		color: #99A7A9;
+	}
+}
+
+/* 上下交叉 */
+@keyframes shang {
+	from {
+		position: absolute;
+		top: -40px;
+		opacity: 0;
+	}
+	to {
+		position: absolute;
+		top: 0px;
+		opacity: 1;
+	}
+}
+@keyframes shang1 {
+	from {
+		position: absolute;
+		bottom: 0px;
+		opacity: 0;
+	}
+	to {
+		position: absolute;
+		bottom: 57px;
+		opacity: 1;
+	}
+}
+
+/* part4橙色框 */
+@keyframes orange {
+	from {
+		left:45%;
+		top: 45%;
+		width: 0;
+		height: 0;
+	}
+	to {
+		left:0;
+		top: 0;
+		width: 350px;
+		height: 410px;
+	}
+}
+@keyframes orange1 {
+	from {
+		left:0;
+		top: 0;
+		width: 350px;
+		height: 410px;
+	}
+	to {
+		left:45%;
+		top: 45%;
+		width: 0;
+		height: 0;
+	}
+}
+/* part4 上左右 */
+@keyframes bottom1{
+	from {
+		position: absolute;
+		left:385px;
+		top: 200px;
+	}
+	to {
+		position: absolute;
+		left:385px;
+		top: 0;
+	}
+}
+@keyframes left4 {
+	from {
+		position: absolute;
+		left:385px;
+	}
+	to {
+		position: absolute;
+		left:0px;
+	}
+}
+@keyframes right4 {
+	from {
+		position: absolute;
+		left:385px;
+	}
+	to {
+		position: absolute;
+		left:770px;
+	}
+}
+
+@keyframes left5 {
+	from {
+		position: relative;
+		left:100%;
+	}
+	to {
+		position: relative;
+		left:0px;
+	}
+}
+@keyframes right5 {
+	from {
+		position: relative;
+		right:100%;
+	}
+	to {
+		position: relative;
+		right:0px;
+	}
+}
+
+/* 菜单right */
+@keyframes right6 {
+	from{right: -250px;}
+	to{right: 0px;}
+}
+@keyframes right7 {
+	from{right: 0px;}
+	to{right: -250px;}
+}
+@keyframes left6 {
+	from{margin-left: 0px;}
+	to {margin-left: -250px;}
+}
+@keyframes left7{
+	from{margin-left: -250px;}
+	to {margin-left: 0px;}
+}
+@keyframes left66 {
+	from{right:0px;}
+	to{right: 250px;}
+}
+@keyframes left666 {
+	from{right: 250px;}
+	to{right: 0px;}
+}
+
+@keyframes right66 {
+	from {
+		position: absolute;
+		left:385px;
+		top: 5px;
+	}
+	to {
+		position: absolute;
+		left:585px;
+		top: 5px;
+	}
+}
+
+/* about */
+/* body2鬼东西 */
+@keyframes a_left1 {
+	from{
+		position: absolute;
+		right: 0;
+	}
+	to {
+		position: absolute;
+		right: 55%;
+	}
+}
+@keyframes a_left2 {
+	from {
+		position: relative;
+		left:100%;
+	}
+	to {
+		position: relative;
+		left:0px;
+	}
+}
+/* body3的奇怪东西 */
+@keyframes a_bottom1 {
+	from {
+		position: relative;
+		top: 200px;
+	}
+	to {
+		position: relative;
+		top: 0px;
+	}
+}
+/* body4的mmp */
+@keyframes a_left3 {
+	from{
+		position: relative;
+		left: -200px;
+	}
+	to {
+		position: relative;
+		left:-0;
+	}
+}
+@keyframes a_top1 {
+	from {
+		position: relative;
+		top: -200px;
+	}
+	to {
+		position: relative;
+		top: 0;
+	}
+}
+@keyframes a_right1 {
+	from{
+		position: relative;
+		right: -200px;
+	}
+	to {
+		position: relative;
+		right:-0;
+	}
+}
+@keyframes chuan1 {
+	from {transform:rotateY(90deg); }
+	to {transform:rotateY(180deg);}	
+}
+@keyframes chuang2{
+			from {transform:rotateY(-90deg);}
+			to {transform:rotateY(0deg);}
+		}

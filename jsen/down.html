@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><Document></Document></title>
+	<style>
+		body {
+			margin:0px;
+			padding: 0px;
+			display:flex;
+			justify-content: center;  
+			align-items:center;
+			text-align: center;
+			background: radial-gradient(circle,#444,#000,#000);/* 渐变背景 */
+		}
+		#char {
+			font-size:400px;
+			color:lightgreen;
+			text-shadow:0 0 50px #666;
+			
+		}
+		#result {
+			font-size: 20px;
+			color:#888;
+		}
+		.jinru {
+			animation:ru 3s;
+		}
+		#char.error{
+			color:red;
+			animation : zhengdong 1s;
+		}
+		@keyframes zhengdong {
+			10%,30%,50%,70%,90%{margin-left: -10px;}
+			20%,40%,60%,80%{margin-left:10px;}
+		}
+		@keyframes ru {
+			0% {opacity: 0; }
+			30% {opacity: 0.3; }
+			50% {opacity: 0.5;}
+			80% {opacity: 0.8;}
+			
+		}
+	</style>
+</head>
+<body>
+	
+	<div>
+		<div id="char" >A</div>
+		<div id="result">请在键盘上按下屏幕显示的字母</div>
+		<div>不区分大小写</div>
+	</div>
+	
+	<script>
+		var code;
+		var charBox = document.getElementById("char");
+		var result = document.getElementById("result");
+		var okCount = 0;//正确个数
+		var errorCount = 0;//错误个数
+		function show(){	
+			var rand = Math.random();//获取(0,1)
+			code = rand * 26;  //获得1-26的数字（小数跟整数）
+			code = Math.floor(code);//0-25（向下取整）
+			code = code + 65;//（a为65，b为66以此类推）
+			var char = String.fromCharCode(code);//将数字改为英文字母
+			charBox.innerHTML = char;
+			
+		}
+		show();
+		
+		window.onkeydown = function (ev){  
+         var key = ev.keyCode; //将按键的数字赋值给key
+         if(key == code){   //当key（键盘某个键）等于 某个数
+            okCount++;   //正确个数累计
+            show();  //再次运行show
+            charBox.className = "jinru";//将charBox的class为jinru（charBox为<div id="char" >A</div>）
+            console.log(key);
+         }else{
+         	errorCount++; //错误个数累计
+			charBox.className = "error"; //错误时展示的画面将charBox的class为error（charBox为<div id="char" >A</div>）
+         }
+         showResult();//展示正确个数，错误个数和正确率
+		 setTimeout(clearAnimated,500); //让错误画面5秒内恢复正常画面
+      }
+		function clearAnimated(){
+			charBox.className = ""; //清空错误画面
+		}
+		function showResult(){
+			var rate = 100 * okCount/(okCount + errorCount); //计算正确率
+			result.innerHTML = "正确" + okCount + "个" + errorCount + "错误" + "个" + "正确率" +
+			rate.toFixed(2) //保留两位小数
+			+ '%';
+		 }
+		
+	</script>
+</body>
+</html>

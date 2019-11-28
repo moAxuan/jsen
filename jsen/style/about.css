@@ -1,0 +1,287 @@
+body {
+	overflow-x: hidden;
+}
+* {
+	margin:0 auto;
+	padding:0px;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+.head {
+	width: 100%;
+	height: 180px;
+	background: url(../images/p7.jpg) no-repeat;
+	background-size: cover;
+}
+.head>div {
+	width: 1300px;
+	height: 180px;
+}
+.head>div>div{
+	width: 600px;
+	height: 90px;
+	float: left;
+}
+.head_left {
+	width: 600px;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.head_left>a{
+	font-size: 25px;
+	font-family: Footlight MT Light;
+	margin:20px 20px;
+}
+
+.head_left>a>h1>span:nth-child(1){
+	color:white;
+}
+.head_left>a>h1>span:nth-child(2){
+	color:#FF7900;
+}
+.head_left>a>h1>span.tucheng{
+	width: 122px;
+	margin-left: 2px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	/* display: none; */
+}
+.head_left>a>h1>span#tucheng1 {
+	background: white;
+	left: 120px;
+	top: -40px;
+}
+
+.head_left>a>h1>span#tucheng2 {
+	background: black;
+	top: 90px;
+}
+
+.title1 {
+	width: 1200px;
+	text-align: center;
+	height: 180px;
+	line-height: 200px;
+	font-size: 34px;
+	font-family: Footlight MT Light;
+	color: #FF7900;
+}
+
+.body2 {
+	position: relative;
+	width: 1200px;
+	height: 400px;
+	display: none;
+}
+.body2 h2 {
+	color: #00C6D7;
+	font-family: Footlight MT Light;
+	margin:20px 0px;
+	font-size: 25px;
+	line-height: 40px;
+	width: 600px;
+}
+.body2 p {
+	color: #464646;
+	font-size: 18px;
+	width: 620px;
+}
+
+.body3 {
+	width: 1200px;
+	height: 130px;
+	text-align: center;
+	display: none;
+}
+
+.body3 h3 {
+	font-family: Footlight MT Light;
+	font-size: 30px;
+	margin-top: 40px;
+	color: #646464;
+}
+
+.body4 {
+	width: 1200px;
+	height: 400px;
+	display: none;
+}
+.body4 ul {
+	width: 1200px;
+	height: 400px;
+}
+.body4 li {
+	width: 260px;
+	float: left;
+	margin:40px 20px;
+}
+.body4 p {
+	text-align: center;
+	font-size: 18px;
+	color: #989898;
+}
+/* 窗帘 */
+.body4 span div {
+	width: 62px;
+	height:253px;
+	display: inline-block;
+	background: rgba(0,0,0,0.6);
+	display: none;
+}
+.body4 li ul>li {
+	width: 34px;
+	height: 33px;
+	margin: 60px 5px 0px 0px;
+
+}
+
+#body5 {
+	width: 100%;
+	height: 420px;
+	background: url(../images/b1.jpg) no-repeat;
+	background-size: cover;
+}
+#body5>div {
+	width: 1200px;
+	height: 420px;
+	display: none;
+}
+#body5>div>div {
+	width: 398px;
+	height: 418px;
+	float: left;
+	color: white;
+}
+#body5 h2 {
+	font-size: 30px;
+	font-family: Footlight MT Light;
+	padding-top: 70px;
+	margin-left: 40px;
+}
+#body5 p {
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+#body5 ul {
+	width: 230px;
+	height: 40px;
+	margin-top: 35px;
+	margin-left:40px;
+}
+#body5 li{
+	width: 34px;
+	height: 33px;
+	float: left;
+	margin-right:10px;
+	cursor: pointer;
+} 
+
+#body5 input {
+	width: 80%;
+	margin:60px 40px;
+	height: 30px;
+	border:none;
+	border-bottom: 1px solid #FF7900;
+	background: none;
+	color: white;
+	font-size: 16px;
+	padding-left: 10px;
+}
+#body5>div>div>a {
+	display: block;
+	width: 80%;
+	height: 40px;
+	background: #00C6D7;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+}
+
+
+#lianjie {
+	width: 100%;
+	height: 60px;
+	background: #00C6D7;
+	display: none;
+	animation: left5 1s;
+	margin-bottom: 1px;
+}
+#lianjie>div{
+	width: 1200px;
+	height: 60px;
+}
+#lianjie>div>div {
+	width: 600px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+}
+#lianjie>div>div>a>h2 {
+	color: white;
+	font-size: 30px;
+	padding-left:40px;
+	font-family: Footlight MT Light;
+}
+#lianjie ul {
+	width: 500px;
+	padding-left:100px; 
+	height: 60px;
+}
+#lianjie li {
+	float: left;
+	width: 100px;
+}
+#lianjie a {
+	color: white;
+}
+
+#end {
+	height: 37px;
+	width: 100%;
+	background: black;
+	display: none;
+	animation:right5 1s;
+}
+#end>div {
+	width: 800px;
+	height: 37px;
+
+}
+
+
+
+#right {
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	background: #4A4A4A;
+	right: 0;
+	top: 0;
+	text-align: center;
+	color: white;
+	display: none;
+}
+#right li {
+	width: 250px;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #3A3A3A;
+}
+#right a {
+	font-size: 20px;
+	color: white;
+}
+.clear {
+	clear:both;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin:0 auto;
+			padding:0;
+		}
+		body {
+			overflow:hidden;
+		}
+	</style>
+</head>
+<body style="background: url(images/1.jpg) no-repeat;background-size:100% 100%;">
+	<canvas style="width: 100%;height: 630px;background: rgba(0,0,0,0);" id="myCanvas">
+		
+	</canvas>
+	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		var clearColor = 'rgba(0, 0, 0, .1)';
+		var w = c.width = window.innerWidth;
+		var h = c.height = window.innerHeight;
+		function random(min,max){
+			return Math.random() * (max - min) + min;
+		}
+		function Font(){};
+		Font.prototype = {
+			init:function(){
+				this.x = random(0,w);
+				this.y = 0;
+				this.color = "green";
+				this.vy = random(6,8);
+				this.hit = random(h * 1,h * 1);
+			},
+			draw:function(){
+				var rand = Math.random();//获取(0,1)
+				code = rand * 26;  //获得1-26的数字（小数跟整数）
+				code = Math.floor(code);//0-25（向下取整）
+				code = code + 65;//（a为65，b为66以此类推）
+				var char = String.fromCharCode(code);//将数字改为英文字母
+				if (this.y < this.hit) {
+					ctx.fillStyle = this.color;
+					ctx.font= "25px Arial";
+		            ctx.fillText(char,this.x,this.y,100);
+	      		}
+	       		this.update();
+			},
+			update:function(){
+				if(this.y < this.hit){
+					this.y += this.vy;
+				}else {
+					this.init();
+				}
+			}
+			init:function(){
+				this.x = random(0,w);
+				this.y = 0;
+				this.color = "green";
+				this.vy = random(6,8);
+				this.hit = random(h * 1,h * 1);
+			},
+			draw:function(){
+				var rand = Math.random();//获取(0,1)
+				code = rand * 26;  //获得1-26的数字（小数跟整数）
+				code = Math.floor(code);//0-25（向下取整）
+				code = code + 65;//（a为65，b为66以此类推）
+				var char = String.fromCharCode(code);//将数字改为英文字母
+				if (this.y < this.hit) {
+					ctx.fillStyle = this.color;
+					ctx.font= "25px Arial";
+		            ctx.fillText(char,this.x,this.y,100);
+	      		}
+	       		this.update();
+			},
+			update:function(){
+				if(this.y < this.hit){
+					this.y += this.vy;
+				}else {
+					this.init();
+				}
+			}
+		};
+		var F = new Font();
+		var A = new Font();
+		var B = new Font();
+		var C = new Font();
+		var D = new Font();
+		var E = new Font();
+		var G = new Font();
+		var FF = new Font();
+		var AA = new Font();
+		var BB = new Font();
+		var CC = new Font();
+		var DD = new Font();
+		var EE = new Font();
+		var GG = new Font();
+		function anim() {
+			    ctx.fillStyle = clearColor;
+			    ctx.fillRect(0,0,w,h);
+			    F.draw();
+				A.draw();
+				B.draw();
+				C.draw();
+				D.draw();
+				E.draw();
+				G.draw();
+				FF.draw();
+				AA.draw();
+				BB.draw();
+				CC.draw();
+				C.draw();
+				D.draw();
+				E.draw();
+				G.draw();
+				FF.draw();
+				AA.draw();
+				BB.draw();
+				CC.draw();
+				DD.draw();
+				EE.draw();
+				GG.draw();
+			    requestAnimationFrame(anim);
+			}
+		anim();
+	</script>
+</body>
+</html>
